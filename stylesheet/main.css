@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    height: max-content;
+}
+#header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 10vh;
+    margin-bottom: 1em;
+    place-items: center;
+}
+#header-img{
+    width: 5vw;
+    height: auto;
+}
+#nav-bar ul {
+    display: flex;
+}
+#nav-bar ul li{
+    list-style-type: none;
+    margin: 0 5rem;
+    
+}
+#nav-bar ul li a{
+    text-align: center;
+    text-decoration: none;
+    padding: .5em;
+    display: block;
+    border-radius: 1rem;
+    color: black;
+    font-size: 2.5rem;
+    min-width: 15vh;
+}
+#nav-bar ul li a:hover{
+    color: aliceblue;
+    background-color: orangered;
+}
+#heading{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5rem;
+    color: orangered;
+    letter-spacing: 1;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+label{
+    font-size: 2rem;
+}
+#submit{
+    max-width: 20vh;
+}
+.email-container{
+    height: 10vh;
+}
+input[type="email"]{
+    height: 3rem;
+    width: 25vw;
+    margin: 1em 0 .5em 0;
+    border-radius: .4em;
+    border: 1px solid orangered;
+}
+input[type="email"]:focus, input[type="email"]:enabled{
+    outline: none;
+}
+#submit{
+    padding: 1em;
+    background-color: orangered;
+    color: aliceblue;
+    border: none;
+    border-radius: .4em;
+    margin-bottom: 1em
+}
+iframe{
+    border-radius: .4em;
+    width: 50vw;
+    margin: 0 auto;
+}
+.iframe-div{
+    display: flex;
+    place-items: center;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+#features{
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    place-items: center;
+}
+.feature-box{
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    height: 20vh;
+    width: 70vw;
+}
+.image-box{
+    padding: 2em;
+    height: 20vh;
+}
+.image-box img{
+    width: auto;
+    height: 100%;
+}
+.text-box{
+    padding-left: 1em;
+}
+.feature-heading{
+    font-size: 5.5rem;
+    font-weight: 700;
+    color: orangered;
+}
+.feature-description{
+    font-size: 1.8rem;
+
+}
+.product-info-container{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    height: 40vh;
+    
+}
+.product-info{
+    height: 100%;
+    width: 20%;
+    text-align: center;
+    background-color: rgb(167, 167, 167);
+    border-radius: .4em;
+}
+.product-info h4{
+    background-color: rgb(234, 234, 234);
+    color: orangered;
+    font-size: 2.5rem;
+    padding: .6em;
+    margin-bottom: 1em;
+}
+.price{
+    font-size: 2.0rem;
+    padding-bottom: 1em;
+    color: rgb(255, 255, 255);
+}
+footer{
+    border-radius: .4em;
+    display: flex;
+    height: 10vh;
+    font-size: 2em;
+    width: 80%;
+    margin: 0 auto;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin-top: 1em;
+    background-color: rgba(255, 69, 0, .6)
+}
+@media screen and (max-width: 600) {
+    html{
+        font-size: 40%;
+    }
+    
+}
